@@ -679,8 +679,8 @@
         function openQrModal() {
             document.getElementById('qrModal').classList.add('active');
             if (!qrDone) {
-                // Generates QR Code for the base website URL (stripping hash/tab query params)
-                const websiteUrl = window.location.origin + window.location.pathname;
+                // Hardcoded to your exact GitHub Pages live link for the school stall
+                const websiteUrl = "https://aryammansalvi-png.github.io/uncle-sams/";
                 new QRCode(document.getElementById("qrcode"), {
                     text: websiteUrl,
                     width: 200,
